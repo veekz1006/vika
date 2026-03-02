@@ -1,17 +1,126 @@
-<html>
-
-
+<!DOCTYPE html>
+<html lang="uk">
 <head>
-    <title>fyufyuqf</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Мій Сайт</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Arial, sans-serif;
+        }
 
+        body {
+            line-height: 1.6;
+            background: #f4f4f4;
+            color: #333;
+        }
+
+        header {
+            background: #222;
+            color: white;
+            padding: 20px 0;
+            text-align: center;
+        }
+
+        nav {
+            background: #444;
+            padding: 10px;
+            text-align: center;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin: 0 15px;
+            font-weight: bold;
+        }
+
+        nav a:hover {
+            color: #00c3ff;
+        }
+
+        section {
+            padding: 60px 20px;
+            text-align: center;
+        }
+
+        .hero {
+            background: linear-gradient(to right, #00c3ff, #ffff1c);
+            color: #222;
+        }
+
+        .btn {
+            display: inline-block;
+            margin-top: 20px;
+            padding: 10px 25px;
+            background: #222;
+            color: white;
+            text-decoration: none;
+            border-radius: 5px;
+            transition: 0.3s;
+        }
+
+        .btn:hover {
+            background: #00c3ff;
+        }
+
+        footer {
+            background: #222;
+            color: white;
+            text-align: center;
+            padding: 20px 0;
+        }
+    </style>
 </head>
-
-
-
 <body>
-    <h1>це заголовок</h1>
-    <p>це параграф</p>
+
+<header>
+    <h1>Мій перший сайт</h1>
+    <p>Ласкаво просимо!</p>
+</header>
+
+<nav>
+    <a href="#about">Про нас</a>
+    <a href="#services">Послуги</a>
+    <a href="#contact">Контакти</a>
+</nav>
+
+<section class="hero">
+    <h2>Сучасний дизайн</h2>
+    <p>Створюємо стильні та швидкі сайти</p>
+    <a href="#contact" class="btn">Зв'язатися</a>
+</section>
+
+<section id="about">
+    <h2>Про нас</h2>
+    <p>Ми команда розробників, що створює красиві та функціональні сайти.</p>
+</section>
+
+<section id="services">
+    <h2>Наші послуги</h2>
+    <p>✔ Розробка сайтів<br>
+       ✔ Дизайн<br>
+       ✔ SEO оптимізація</p>
+</section>
+
+<section id="contact">
+    <h2>Контакти</h2>
+    <p>Email: example@email.com</p>
+    <button class="btn" onclick="showMessage()">Написати нам</button>
+</section>
+
+<footer>
+    <p>© 2026 Мій Сайт | Всі права захищені</p>
+</footer>
+
+<script>
+    function showMessage() {
+        alert("Дякуємо за звернення! Ми скоро з вами зв'яжемося.");
+    }
+</script>
+
 </body>
-
-
 </html>
